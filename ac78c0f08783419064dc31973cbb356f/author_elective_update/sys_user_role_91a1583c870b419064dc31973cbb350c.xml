@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Cloud Architect</description>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_asmln_cloud_wo_1.Cloud Architect</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>Cloud Architect</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-21 08:03:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>91a1583c870b419064dc31973cbb350c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_asmln_cloud_wo_1.Cloud Architect</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_user_role_91a1583c870b419064dc31973cbb350c</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-21 08:03:59</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</application>
+        <file_path/>
+        <instance_id>d6146579db9b8748d5c37236bf96199a</instance_id>
+        <instance_name>asmlitsmdev</instance_name>
+        <name>sys_user_role_91a1583c870b419064dc31973cbb350c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>Cloud Architect</description><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>x_asmln_cloud_wo_1.Cloud Architect</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>Cloud Architect</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>sjansse2</sys_created_by><sys_created_on>2022-04-21 08:03:59</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>91a1583c870b419064dc31973cbb350c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_asmln_cloud_wo_1.Cloud Architect</sys_name><sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope><sys_update_name>sys_user_role_91a1583c870b419064dc31973cbb350c</sys_update_name><sys_updated_by>sjansse2</sys_updated_by><sys_updated_on>2022-04-21 08:03:59</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1438574949</payload_hash>
+        <record_name>x_asmln_cloud_wo_1.Cloud Architect</record_name>
+        <reverted_from/>
+        <source>b87844f08783419064dc31973cbb35a7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-21 08:03:59</sys_created_on>
+        <sys_id>d1a1583c870b419064dc31973cbb3510</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1804b263e980000001</sys_recorded_at>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-21 08:03:59</sys_updated_on>
+        <type>Role</type>
+        <update_guid>99a1583c320b419098e07435f81dc00f</update_guid>
+        <update_guid_history>99a1583c320b419098e07435f81dc00f:-1438574949</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-05-19 15:08:00">7fb36135872f4d1064dc31973cbb35ff</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-19 13:08:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>cd6ea6ed517b4bd5aa37d6e64ce8e2b1</sys_id>
+        <sys_metadata>91a1583c870b419064dc31973cbb350c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_asmln_cloud_wo_1.Cloud Architect</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_scope_delete display_value="">911020ba0caa4f31bbdd36bbf8c837a1</sys_scope_delete>
+        <sys_update_name>sys_user_role_91a1583c870b419064dc31973cbb350c</sys_update_name>
+        <sys_update_version display_value="sys_user_role_91a1583c870b419064dc31973cbb350c">d1a1583c870b419064dc31973cbb3510</sys_update_version>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-19 13:08:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

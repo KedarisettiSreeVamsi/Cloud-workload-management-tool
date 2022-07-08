@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_notification_uiRoute</name>
+        <page display_value="">23b9d8f4d98b4190539e36d6302f936c</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-21 08:39:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>ebb9d8f4d28b41908f62862493bd9069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_notification_uiRoute</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_page_property_ebb9d8f4d28b41908f62862493bd9069</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-21 08:39:22</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_asmln_cloud_wo_1.23b9d8f4d98b4190539e36d6302f936c.root.chrome_notification_uiRoute</unique_name>
+        <value>cb1af195872023002941b53046cb0b4e</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</application>
+        <file_path/>
+        <instance_id>d6146579db9b8748d5c37236bf96199a</instance_id>
+        <instance_name>asmlitsmdev</instance_name>
+        <name>sys_ux_page_property_ebb9d8f4d28b41908f62862493bd9069</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_notification_uiRoute</name><page display_value="">23b9d8f4d98b4190539e36d6302f936c</page><required_translations>[]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>sjansse2</sys_created_by><sys_created_on>2022-04-21 08:39:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>ebb9d8f4d28b41908f62862493bd9069</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_notification_uiRoute</sys_name><sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope><sys_update_name>sys_ux_page_property_ebb9d8f4d28b41908f62862493bd9069</sys_update_name><sys_updated_by>sjansse2</sys_updated_by><sys_updated_on>2022-04-21 08:39:22</sys_updated_on><type>string</type><unique_name>x_asmln_cloud_wo_1.23b9d8f4d98b4190539e36d6302f936c.root.chrome_notification_uiRoute</unique_name><value>cb1af195872023002941b53046cb0b4e</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>-1780955760</payload_hash>
+        <record_name>chrome_notification_uiRoute</record_name>
+        <reverted_from/>
+        <source>7d297d438732011064dc31973cbb3534</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-04-16 05:06:50</sys_created_on>
+        <sys_id>3287feda878f05d082c80d0c8bbb35b4</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18030c442100000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>fe87feda5f8f05d0670fcb5e44e90bb3</update_guid>
+        <update_guid_history>fe87feda5f8f05d0670fcb5e44e90bb3:-1780955760</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-26 11:59:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>1c21977e69054be499b73f82fab6c7e4</sys_id>
+        <sys_metadata>ebb9d8f4d28b41908f62862493bd9069</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_notification_uiRoute</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_scope_delete display_value="">911020ba0caa4f31bbdd36bbf8c837a1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_ebb9d8f4d28b41908f62862493bd9069</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_ebb9d8f4d28b41908f62862493bd9069">3287feda878f05d082c80d0c8bbb35b4</sys_update_version>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-26 11:59:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_asmln_cloud_wo_1_workflow_phase" label="Design" max_length="40" name="x_asmln_cloud_wo_1_design" sizeclass="9" type="collection">
+        <element label="Completed" max_length="40" name="completed" type="boolean"/>
+        <element label="Design Phase Template" max_length="32" name="design_phase_template" read_only="true" reference="x_asmln_cloud_wo_1_design_phase_template" type="reference"/>
+        <element label="Remarks" max_length="500" name="remarks" type="string"/>
+        <element label="Workload Workflow" max_length="32" name="workload_workflow" read_only="true" reference="x_asmln_cloud_wo_1_cloud_workload_workflow" type="reference"/>
+        <index name="index">
+            <element name="workload_workflow"/>
+        </index>
+        <index name="index2">
+            <element name="design_phase_template"/>
+        </index>
+    </element>
+</database>

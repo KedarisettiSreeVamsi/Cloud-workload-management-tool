@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_asmln_cloud_wo_1_cloud_workload_workflow">x_asmln_cloud_wo_1_cloud_workload_workflow</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix/>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-21 07:32:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>066ac87887c3419064dc31973cbb353a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_number_066ac87887c3419064dc31973cbb353a</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 13:33:03</sys_updated_on>
+    </sys_number>
+</record_update>

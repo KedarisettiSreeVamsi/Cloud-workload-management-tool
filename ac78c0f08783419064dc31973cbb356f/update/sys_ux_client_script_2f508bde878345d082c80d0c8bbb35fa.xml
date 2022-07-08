@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record">ab5083de878345d082c80d0c8bbb354b</macroponent>
+        <name>Set Related Item Content</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    var resultTabContent = {
+  ...api.state.relatedTabContent,
+  ...event.payload.relatedTabContent,
+};
+    api.setState('relatedTabContent', resultTabContent);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-26 12:38:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2f508bde878345d082c80d0c8bbb35fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Related Item Content</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_2f508bde878345d082c80d0c8bbb35fa</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-26 12:38:14</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

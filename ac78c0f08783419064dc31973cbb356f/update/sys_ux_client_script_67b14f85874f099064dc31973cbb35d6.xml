@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Modal - Create Change Request">c6b10f85874f099064dc31973cbb354d</macroponent>
+        <name>Set preview fields from selection</name>
+        <required_translations/>
+        <script><![CDATA[function handler({api, event, helpers, imports}) {
+    var answer = JSON.parse(event.payload.data.output);
+    api.setState('patchOrchActive', answer.isPatchOrchActive);
+    if (answer.endDateObj && answer.endDateObj.endDate && !answer.endDateObj.overdue) {
+        api.setState('end_date', answer.endDateObj.endDate);
+    } else api.setState('end_date', '');
+
+    var riskRatingValue = 4;
+    var riskRatingDisplay = '4 - Low';
+    if (answer.riskRating) {
+        if (answer.riskRating.value)
+            riskRatingValue = answer.riskRating.value;
+        
+        if (answer.riskRating.display)					
+            riskRatingDisplay = answer.riskRating.display;
+    }					
+    
+    api.setState('priority', riskRatingValue.toString());
+
+
+    var justificationMessage = '';
+    var viInVGCount = Number(answer.viInVGCount);
+    if (answer.vulnCount || answer.ciCount) {     
+        var remediationWithOverdueText = "";
+        var remediationTargetText = "";
+        var remediationDate = answer.endDateObj;
+        
+        if (remediationDate) {
+            if (remediationDate.overdue) 
+                remediationWithOverdueText = `The VG in this CR is overdue. The remediation target date was ${remediationDate.endDateFormatted}.`;
+            else	
+                remediationWithOverdueText = `The remediation target date is ${remediationDate.endDateFormatted}.`;
+        
+            remediationTargetText = remediationDate.endDate ? remediationWithOverdueText : "";
+        }
+        
+        if (!answer.vulnCount && !answer.ciCount) 
+            return;
+        
+        if (answer.vulnCount === 1 && answer.ciCount === 1)
+            justificationMessage = `This change is required to address one vulnerability on one CI with a risk rating up to '${riskRatingDisplay}'. ${remediationTargetText}`;
+        else if (answer.vulnCount === 1 && answer.ciCount !== 1) {
+            if (!answer.ciCount)
+                justificationMessage = `This change is required to address one vulnerability within ${viInVGCount} vulnerable items with a risk rating up to '${riskRatingDisplay}'. ${remediationTargetText}`;
+            else
+                justificationMessage = `This change is required to address one vulnerability across ${answer.ciCount} CIs with a risk rating up to '${riskRatingDisplay}'. ${remediationTargetText}`;
+        }
+        else if (answer.vulnCount !== 1 && answer.ciCount === 1)
+            justificationMessage = `This change is required to address ${answer.vulnCount} vulnerabilities on one CI with a risk rating up to '${riskRatingDisplay}'. ${remediationTargetText}`;
+        else if (answer.vulnCount !== 1 && answer.ciCount !== 1) 
+            if (!answer.ciCount)
+                justificationMessage = `This change is required to address ${answer.vulnCount} vulnerabilities within ${viInVGCount} vulnerable items with a risk rating up to '${riskRatingDisplay}'. ${remediationTargetText}`;
+            else
+                justificationMessage = `This change is required to address ${answer.vulnCount} vulnerabilities across ${answer.ciCount} CIs with a risk rating up to '${riskRatingDisplay}'. ${remediationTargetText}`;
+    } else if (viInVGCount > 1)
+        justificationMessage = `This change is required to address vulnerabilities associated with ${viInVGCount} vulnerable items`;
+    else if (viInVGCount === 1)
+        justificationMessage = "This change is required to address vulnerability associated with 1 vulnerable item";
+    
+    if (justificationMessage) api.setState('justification', justificationMessage);
+    else api.setState('justification', "");
+}
+
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:31:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>67b14f85874f099064dc31973cbb35d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set preview fields from selection</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_67b14f85874f099064dc31973cbb35d6</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:31:50</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

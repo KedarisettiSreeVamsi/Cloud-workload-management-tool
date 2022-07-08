@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Mark as False Positive">65228b09874f099064dc31973cbb35dc</macroponent>
+        <name>Generate modal message</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    var tableName = "remediation task";
+    if (api.context.props.table != "sn_vul_vulnerability") {
+        tableName = "vulnerable item";
+    }
+    helpers.translate('The {0} will be closed and marked as a false positive after this request is submitted and approved.', tableName).then((value) => {
+        api.setState("modalInfoMessage", value);
+        });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:33:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6522cb09874f099064dc31973cbb3508</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate modal message</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_6522cb09874f099064dc31973cbb3508</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:33:37</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

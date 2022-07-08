@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="instructions_what" label="Instructions What" language="en" table="x_asmln_cloud_wo_1_demand_validation_phase_template">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>instructions_what</element>
+            <help/>
+            <hint/>
+            <label>Instructions What</label>
+            <language>en</language>
+            <name>x_asmln_cloud_wo_1_demand_validation_phase_template</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-05-17 12:07:01</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8b924bcd8763495064dc31973cbb351c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Instructions What</sys_name>
+            <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+            <sys_update_name>sys_documentation_x_asmln_cloud_wo_1_demand_validation_phase_template_instructions_what_en</sys_update_name>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-05-17 12:07:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

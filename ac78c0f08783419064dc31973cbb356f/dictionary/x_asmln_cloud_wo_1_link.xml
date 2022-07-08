@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Link" max_length="40" name="x_asmln_cloud_wo_1_link" type="collection">
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Azure DevOps Project" sequence="0" value="azure_devops_project"/>
+                <element inactive_on_update="false" label="Sharepoint Workload Folder" sequence="1" value="sharepoint_workload_folder"/>
+                <element inactive_on_update="false" label="Solution Design" sequence="2" value="solution_design"/>
+                <element inactive_on_update="false" label="Cloudability" sequence="3" value="cloudability"/>
+            </choice>
+        </element>
+        <element label="URL" mandatory="true" max_length="400" name="url" type="url"/>
+        <element label="Workload Workflow" max_length="32" name="workload_workflow" read_only="true" reference="x_asmln_cloud_wo_1_cloud_workload_workflow" type="reference"/>
+        <index name="index">
+            <element name="workload_workflow"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Cloud Workload Management Tool Config">abb9d8f43b8b41900864d145c370556b</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckyiiaaccjjmddaaaacccddfiiffbuffavnjja",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_vul.GFORM_RELOAD_RELAY_59061b92b7072010aed5b064ce11a92c",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_vul.GFORM_RELOAD_RELAY_59061b92b7072010aed5b064ce11a92c",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : {
+      "dataBrokerId" : "dc6e87a5232200100e4bc50947bf654b",
+      "operationName" : "RELOAD",
+      "parentResourceId" : "gform",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : { }
+      }
+    },
+    "targetId" : "ckyiiaaccjjmddaaaaccbddfiiffvwmtiggia",
+    "type" : "DATABROKER_OP"
+  } ]
+}, {
+  "eventMappingId" : "ckmwnygweeaaaaddfccaiiddeeeljemhq",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_vul.MODAL_CLOSED_RELAY_(CREATE_CHANGE_REQUEST)",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_vul.MODAL_CLOSED_RELAY_(CREATE_CHANGE_REQUEST)",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.CANVAS_MODAL#CLOSED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "modalInstanceId" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "modalInstanceId" ]
+            }
+          }
+        }
+      },
+      "sysId" : "5527ec5cf5ac11c053169844f273481a"
+    },
+    "operation" : null,
+    "targetId" : "ckmwnygwccaaaaddeccaiiddiihhhhchhxeer",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckmuseyccaaaaaabbyccaiieiiaamvcqci",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_vul.MODAL_SELECTED_RELAY_59061b92b7072010aed5b064ce11a92c",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_vul.MODAL_SELECTED_RELAY_59061b92b7072010aed5b064ce11a92c",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "modalId" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "modalId" ]
+            }
+          },
+          "showModal" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "showModal" ]
+            }
+          },
+          "displayOptions" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "displayOptions" ]
+            }
+          },
+          "bare" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "bare" ]
+            }
+          },
+          "preserveState" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "preserveState" ]
+            }
+          }
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "ckmuseyccaaaaaabbxccaiieaulideezj",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Modal - Create Change Request">3872c389874f099064dc31973cbb354f</macroponent>
+        <macroponent_config>{
+  "taskSysId" : "",
+  "label" : "",
+  "bare" : false,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : true,
+  "headingOnlyVisibleToScreenReaders" : false
+}</macroponent_config>
+        <name>Modal - Create Change Request default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record">55914385874f099064dc31973cbb3539</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Cloud Workload Details Modal Injection - Create Change Request">54728389874f099064dc31973cbb359b</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:34:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>c572c389874f099064dc31973cbb3551</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Modal - Create Change Request default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_screen_c572c389874f099064dc31973cbb3551</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:34:56</sys_updated_on>
+    </sys_ux_screen>
+</record_update>

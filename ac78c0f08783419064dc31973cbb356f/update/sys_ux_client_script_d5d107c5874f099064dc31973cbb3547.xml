@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Request Exception Task">d5d107c5874f099064dc31973cbb3508</macroponent>
+        <name>updateUntilDate</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports,
+    params
+}) {
+    var dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+    var validPayloadDate;
+    if (event.elementId === "date_input_text") {
+        validPayloadDate = (event.payload.fieldValue.match(dateRegex)) ? "" + event.payload.fieldValue : "";
+    } else {
+        validPayloadDate = event.payload.value;
+    }
+    var currentYear = new Date().getFullYear();
+    var currentMonth = pad(new Date().getMonth() + 1);
+    var currentDay = pad(new Date().getDate());
+    var currentDate = currentYear + '-' + currentMonth + '-' + currentDay;
+    function pad(n){return n<10 ? '0'+n : n};
+
+    if (new Date(currentDate).valueOf() < new Date(validPayloadDate).valueOf()) {
+        api.setState("untilDate", validPayloadDate);
+        api.setState("errorMessage", []);
+    } else if (new Date(currentDate).valueOf() === new Date(validPayloadDate).valueOf()) {
+        if (new Date(api.state.untilDate).valueOf() < new Date(currentDate).valueOf()) {
+            api.setState("errorMessage", api.state.alertMessage);
+        }
+    } else {
+        api.setState("untilDate", validPayloadDate);
+        api.setState("errorMessage", api.state.alertMessage);
+    }
+
+    api.emit('VALIDATE_FORM_FIELDS', {});
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:32:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d5d107c5874f099064dc31973cbb3547</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>updateUntilDate</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_d5d107c5874f099064dc31973cbb3547</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:32:14</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

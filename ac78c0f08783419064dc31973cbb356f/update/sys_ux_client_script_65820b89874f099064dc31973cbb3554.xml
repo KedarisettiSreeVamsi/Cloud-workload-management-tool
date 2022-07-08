@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Data Navigator">0982c789874f099064dc31973cbb35f3</macroponent>
+        <name>Update node data</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * Update node data with new values
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({ api, event, helpers, imports }) {
+  const { data_nav_config } = api.data;
+  const { output = {} } = data_nav_config;
+  const { rootTable = "", nodeData, notification_messages = [] } = output;
+  let filterCondition = "active=true";
+
+  // calculate time diff
+  const { animationDuration = 1000, dataNavRequestTime: requestTime = 0 } =
+    api.state;
+  const responseTime = Date.now();
+  const requestTimeDiff = responseTime - requestTime;
+  const animationDelay =
+    requestTimeDiff < animationDuration
+      ? animationDuration - requestTimeDiff
+      : 0;
+  helpers.timing.setTimeout(() => {
+    if (rootTable) {
+      filterCondition += `^table=${rootTable}`;
+      api.setState("configViewsConditions", filterCondition);
+    }
+
+    api.setState("requestTime", 0);
+    api.setState("nodemapNodeData", nodeData);
+    api.setState("dataNavNotifications", notification_messages);
+  }, animationDelay);
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:35:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>65820b89874f099064dc31973cbb3554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update node data</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_65820b89874f099064dc31973cbb3554</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:35:15</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

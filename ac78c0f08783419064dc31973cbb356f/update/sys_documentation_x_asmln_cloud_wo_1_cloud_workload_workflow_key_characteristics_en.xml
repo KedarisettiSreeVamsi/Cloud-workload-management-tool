@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="key_characteristics" label="Key Characteristics" language="en" table="x_asmln_cloud_wo_1_cloud_workload_workflow">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>key_characteristics</element>
+            <help/>
+            <hint/>
+            <label>Key Characteristics</label>
+            <language>en</language>
+            <name>x_asmln_cloud_wo_1_cloud_workload_workflow</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 12:09:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>82af629987d8991082c80d0c8bbb35ea</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Key Characteristics</sys_name>
+            <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+            <sys_update_name>sys_documentation_x_asmln_cloud_wo_1_cloud_workload_workflow_key_characteristics_en</sys_update_name>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 12:09:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

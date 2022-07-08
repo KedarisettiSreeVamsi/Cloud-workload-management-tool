@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Create Run on Workload Workflow creation</description>
+        <internal_name>create_run_on_workload_workflow_creation</internal_name>
+        <label_cache>[{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.track","label":"4 - For Each➛Run Phase Template Record➛Track","reference":"","reference_display":"Track","type":"choice","base_type":"choice","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"track","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","reference":false,"value":""},{"used":false,"label":"Security \u0026 Risk Track","image":"","selected":false,"missing":false,"rawLabel":"Security \u0026 Risk Track","reference":false,"value":"security_risk_track","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Service Management Track","image":"","selected":false,"missing":false,"rawLabel":"Service Management Track","reference":false,"value":"service_management_track","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Cost Management Track","image":"","selected":false,"missing":false,"rawLabel":"Cost Management Track","reference":false,"value":"cost_management_track","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Milestones","image":"","selected":false,"missing":false,"rawLabel":"Milestones","reference":false,"value":"milestones","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}}]},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.sort_order","label":"4 - For Each➛Run Phase Template Record➛Sort Order","reference":"","reference_display":"Sort Order","type":"integer","base_type":"integer","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"sort_order"},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.for_workload_type","label":"4 - For Each➛Run Phase Template Record➛For Workload Type","reference":"","reference_display":"For Workload Type","type":"choice","base_type":"choice","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"for_workload_type","choices":[{"used":false,"label":"Standard","image":"","selected":false,"missing":false,"rawLabel":"Standard","reference":false,"value":"standard","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"POC","image":"","selected":false,"missing":false,"rawLabel":"POC","reference":false,"value":"poc","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Platform Workload","image":"","selected":false,"missing":false,"rawLabel":"Platform Workload","reference":false,"value":"platform_workload","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}}]},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.description","label":"4 - For Each➛Run Phase Template Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"description"},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.category","label":"4 - For Each➛Run Phase Template Record➛Category","reference":"","reference_display":"Category","type":"string","base_type":"string","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"category"},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.title","label":"4 - For Each➛Run Phase Template Record➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"title"},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.__dont_treat_as_error__","label":"5 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.__action_status__","label":"5 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.table_name","label":"5 - Create Record➛Run Table","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.record","label":"5 - Create Record➛Run Record","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item","label":"4 - For Each➛Run Phase Template Record","reference":"x_asmln_cloud_wo_1_run_phase_template","reference_display":"Run Phase Template","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created_1.current.workload.u_workload_type","label":"Trigger - Record Created➛Cloud Workload Workflow Record➛Cloud Workload➛Workload type","reference":"","reference_display":"Workload type","type":"choice","base_type":"choice","parent_table_name":"u_cloud_environment_workload","column_name":"u_workload_type","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","reference":false,"value":""},{"used":false,"label":"Standard","image":"","selected":false,"missing":false,"rawLabel":"Standard","reference":false,"value":"Standard","parameters":{"name":"u_cloud_environment_workload"}},{"used":false,"label":"POC","image":"","selected":false,"missing":false,"rawLabel":"POC","reference":false,"value":"POC","parameters":{"name":"u_cloud_environment_workload"}},{"used":false,"label":"Platform Workload","image":"","selected":false,"missing":false,"rawLabel":"Platform Workload","reference":false,"value":"Platform Workload","parameters":{"name":"u_cloud_environment_workload"}}]},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.Table","label":"3 - Look Up Records➛Run Phase Template Table","reference":"x_asmln_cloud_wo_1_run_phase_template","reference_display":"Run Phase Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.Records","label":"3 - Look Up Records➛Run Phase Template Records","reference":"x_asmln_cloud_wo_1_run_phase_template","reference_display":"Run Phase Template","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Cloud Workload Workflow Record","reference":"x_asmln_cloud_wo_1_cloud_workload_workflow","reference_display":"Cloud Workload Workflow","type":"reference","base_type":"reference","attributes":{}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.Records","label":"1 - Look Up Records➛Run Records","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.Table","label":"1 - Look Up Records➛Run Table","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>9ce1c6d98790991082c80d0c8bbb35e7</master_snapshot>
+        <name>Create Run on Workload Workflow creation</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>233a31518750991082c80d0c8bbb3551</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:30:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a7f0d6c98767c55064dc31973cbb358c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create Run on Workload Workflow creation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_hub_flow_a7f0d6c98767c55064dc31973cbb358c</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:49</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_asmln_cloud_wo_1_cloud_workload_workflow">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:16:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>233a31518750991082c80d0c8bbb3551</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:16:24</sys_updated_on>
+        <table>x_asmln_cloud_wo_1_cloud_workload_workflow</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"a4e10ad98790991082c80d0c8bbb35ac","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>a7f0d6c98767c55064dc31973cbb358c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:48</sys_created_on>
+        <sys_id>a4e10ad98790991082c80d0c8bbb35ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <trigger display_value="">233a31518750991082c80d0c8bbb3551</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>a4e10ad98790991082c80d0c8bbb35ac</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:48</sys_created_on>
+        <sys_id>ace10ad98790991082c80d0c8bbb35ac</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a7f0d6c98767c55064dc31973cbb358c^sys_idNOT INa4e10ad98790991082c80d0c8bbb35ac"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a7f0d6c98767c55064dc31973cbb358c^sys_idNOT IN76f15ac587a7c55064dc31973cbb354f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>76f15ac587a7c55064dc31973cbb354f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=76f15ac587a7c55064dc31973cbb354f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>76f15ac587a7c55064dc31973cbb354f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:33</sys_created_on>
+        <sys_id>3af15ac587a7c55064dc31973cbb3550</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:34:33</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>76f15ac587a7c55064dc31973cbb354f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:33</sys_created_on>
+        <sys_id>f2f15ac587a7c55064dc31973cbb3551</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:34:33</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_cloud_workload_workflow</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a7f0d6c98767c55064dc31973cbb358c^sys_idNOT IN2ff0d6c98767c55064dc31973cbb358e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a7f0d6c98767c55064dc31973cbb358c</id>
+        <name>Create Run on Workload Workflow creation</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:30:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ff0d6c98767c55064dc31973cbb358e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:30:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2ff0d6c98767c55064dc31973cbb358e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a7f0d6c98767c55064dc31973cbb358c^sys_idNOT IN66f15ac587a7c55064dc31973cbb354a,aef15ac587a7c55064dc31973cbb3528"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</model>
+        <model_id>a7f0d6c98767c55064dc31973cbb358c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a7f0d6c98767c55064dc31973cbb358c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>66f15ac587a7c55064dc31973cbb354a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</model>
+        <model_id>a7f0d6c98767c55064dc31973cbb358c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a7f0d6c98767c55064dc31973cbb358c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>aef15ac587a7c55064dc31973cbb3528</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a7f0d6c98767c55064dc31973cbb358c^sys_idNOT IN29f59289872bc55064dc31973cbb3530,7ef15ac587a7c55064dc31973cbb357d,edf55289872bc55064dc31973cbb35f2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</flow>
+        <order>5</order>
+        <parent_ui_id>1a0a27c6-3067-4c92-a64b-12e7083efa20</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>29f59289872bc55064dc31973cbb3530</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:49</sys_updated_on>
+        <ui_id>3073223d-aa17-4ca7-a6a2-23283dd55ac5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=29f59289872bc55064dc31973cbb3530"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>29f59289872bc55064dc31973cbb3530</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_id>e1f59289872bc55064dc31973cbb3532</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:51:56</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_run</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=29f59289872bc55064dc31973cbb3530"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>29f59289872bc55064dc31973cbb3530</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_id>adf59289872bc55064dc31973cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:51:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>29f59289872bc55064dc31973cbb3530</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_id>61f59289872bc55064dc31973cbb3532</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:51:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>workload_workflow={{Created_1.current}}^title={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.title}}^category={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.category}}^description={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.description}}^for_workload_type={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.for_workload_type}}^sort_order={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.sort_order}}^track={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.track}}^run_phase_template={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=29f59289872bc55064dc31973cbb3530"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=29f59289872bc55064dc31973cbb3530"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7ef15ac587a7c55064dc31973cbb357d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <ui_id>1052f284-71ec-45ab-a0c8-2330d113fcdb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7ef15ac587a7c55064dc31973cbb357d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ef15ac587a7c55064dc31973cbb357d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:43:27</sys_created_on>
+        <sys_id>01045e0d87e7c55064dc31973cbb356a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:43:27</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_run</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7ef15ac587a7c55064dc31973cbb357d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7ef15ac587a7c55064dc31973cbb357d</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:43:27</sys_created_on>
+        <sys_id>45045e0d87e7c55064dc31973cbb3569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>workload_workflow={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7ef15ac587a7c55064dc31973cbb357d</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:43:27</sys_created_on>
+        <sys_id>8d045e0d87e7c55064dc31973cbb3569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7ef15ac587a7c55064dc31973cbb357d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7ef15ac587a7c55064dc31973cbb357d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</flow>
+        <order>3</order>
+        <parent_ui_id>a83703f9-ef2c-4292-83c1-2655123b7abd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>edf55289872bc55064dc31973cbb35f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <ui_id>269b6814-c5a8-4ab0-b26b-cd82e20e2645</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=edf55289872bc55064dc31973cbb35f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>edf55289872bc55064dc31973cbb35f2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_id>a9f55289872bc55064dc31973cbb35f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:51:56</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_run_phase_template</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=edf55289872bc55064dc31973cbb35f2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>edf55289872bc55064dc31973cbb35f2</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_id>edf55289872bc55064dc31973cbb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:51:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>for_workload_type={{Created_1.current.workload.u_workload_type}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>edf55289872bc55064dc31973cbb35f2</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_id>29f55289872bc55064dc31973cbb35f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:51:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=edf55289872bc55064dc31973cbb35f2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=edf55289872bc55064dc31973cbb35f2"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a7f0d6c98767c55064dc31973cbb358c^sys_idNOT IN6df55289872bc55064dc31973cbb35f7,fb545e8d87e7c55064dc31973cbb350d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">61f55289872bc55064dc31973cbb35f7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a83703f9-ef2c-4292-83c1-2655123b7abd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6df55289872bc55064dc31973cbb35f7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:49</sys_updated_on>
+        <ui_id>1a0a27c6-3067-4c92-a64b-12e7083efa20</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6df55289872bc55064dc31973cbb35f7"/>
+    <sys_element_mapping action="delete_multiple" query="id=6df55289872bc55064dc31973cbb35f7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>6df55289872bc55064dc31973cbb35f7</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:51:56</sys_created_on>
+        <sys_id>65f59289872bc55064dc31973cbb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:51:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{269b6814-c5a8-4ab0-b26b-cd82e20e2645.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6df55289872bc55064dc31973cbb35f7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6df55289872bc55064dc31973cbb35f7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7f545e8d87e7c55064dc31973cbb350c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:44:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fb545e8d87e7c55064dc31973cbb350d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <ui_id>a83703f9-ef2c-4292-83c1-2655123b7abd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fb545e8d87e7c55064dc31973cbb350d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>fb545e8d87e7c55064dc31973cbb350d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:44:59</sys_created_on>
+        <sys_id>73545e8d87e7c55064dc31973cbb3512</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:44:59</sys_updated_on>
+        <value>No Run records exist for Workload Workflow</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fb545e8d87e7c55064dc31973cbb350d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>fb545e8d87e7c55064dc31973cbb350d</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:44:59</sys_created_on>
+        <sys_id>ff545e8d87e7c55064dc31973cbb3511</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:44:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{1052f284-71ec-45ab-a0c8-2330d113fcdb.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>fb545e8d87e7c55064dc31973cbb350d</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:44:59</sys_created_on>
+        <sys_id>3b545e8d87e7c55064dc31973cbb3511</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:44:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=fb545e8d87e7c55064dc31973cbb350d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fb545e8d87e7c55064dc31973cbb350d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a7f0d6c98767c55064dc31973cbb358c^sys_idNOT INaef15ac587a7c55064dc31973cbb354c,eef15ac587a7c55064dc31973cbb352f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a7f0d6c98767c55064dc31973cbb358c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>aef15ac587a7c55064dc31973cbb354c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:34:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a7f0d6c98767c55064dc31973cbb358c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-17 08:34:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>eef15ac587a7c55064dc31973cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-17 08:34:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a7f0d6c98767c55064dc31973cbb358c^sys_idNOT INa0e10ad98790991082c80d0c8bbb35ad"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>a7f0d6c98767c55064dc31973cbb358c</plan_id>
+        <snapshot>9ce1c6d98790991082c80d0c8bbb35e7</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a0e10ad98790991082c80d0c8bbb35ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <trigger display_value="">233a31518750991082c80d0c8bbb3551</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a7f0d6c98767c55064dc31973cbb358c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Create Run on Workload Workflow creation</description>
+        <internal_name>create_run_on_workload_workflow_creation</internal_name>
+        <label_cache>[{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.track","label":"4 - For Each➛Run Phase Template Record➛Track","reference":"","reference_display":"Track","type":"choice","base_type":"choice","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"track","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","reference":false,"value":""},{"used":false,"label":"Security \u0026 Risk Track","image":"","selected":false,"missing":false,"rawLabel":"Security \u0026 Risk Track","reference":false,"value":"security_risk_track","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Service Management Track","image":"","selected":false,"missing":false,"rawLabel":"Service Management Track","reference":false,"value":"service_management_track","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Cost Management Track","image":"","selected":false,"missing":false,"rawLabel":"Cost Management Track","reference":false,"value":"cost_management_track","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Milestones","image":"","selected":false,"missing":false,"rawLabel":"Milestones","reference":false,"value":"milestones","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}}]},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.sort_order","label":"4 - For Each➛Run Phase Template Record➛Sort Order","reference":"","reference_display":"Sort Order","type":"integer","base_type":"integer","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"sort_order"},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.for_workload_type","label":"4 - For Each➛Run Phase Template Record➛For Workload Type","reference":"","reference_display":"For Workload Type","type":"choice","base_type":"choice","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"for_workload_type","choices":[{"used":false,"label":"Standard","image":"","selected":false,"missing":false,"rawLabel":"Standard","reference":false,"value":"standard","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"POC","image":"","selected":false,"missing":false,"rawLabel":"POC","reference":false,"value":"poc","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}},{"used":false,"label":"Platform Workload","image":"","selected":false,"missing":false,"rawLabel":"Platform Workload","reference":false,"value":"platform_workload","parameters":{"name":"x_asmln_cloud_wo_1_workflow_phase"}}]},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.description","label":"4 - For Each➛Run Phase Template Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"description"},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.category","label":"4 - For Each➛Run Phase Template Record➛Category","reference":"","reference_display":"Category","type":"string","base_type":"string","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"category"},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item.title","label":"4 - For Each➛Run Phase Template Record➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"x_asmln_cloud_wo_1_run_phase_template","column_name":"title"},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.__dont_treat_as_error__","label":"5 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.__action_status__","label":"5 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.table_name","label":"5 - Create Record➛Run Table","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3073223d-aa17-4ca7-a6a2-23283dd55ac5.record","label":"5 - Create Record➛Run Record","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a0a27c6-3067-4c92-a64b-12e7083efa20.item","label":"4 - For Each➛Run Phase Template Record","reference":"x_asmln_cloud_wo_1_run_phase_template","reference_display":"Run Phase Template","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created_1.current.workload.u_workload_type","label":"Trigger - Record Created➛Cloud Workload Workflow Record➛Cloud Workload➛Workload type","reference":"","reference_display":"Workload type","type":"choice","base_type":"choice","parent_table_name":"u_cloud_environment_workload","column_name":"u_workload_type","choices":[{"label":"-- None --","used":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","reference":false,"value":""},{"used":false,"label":"Standard","image":"","selected":false,"missing":false,"rawLabel":"Standard","reference":false,"value":"Standard","parameters":{"name":"u_cloud_environment_workload"}},{"used":false,"label":"POC","image":"","selected":false,"missing":false,"rawLabel":"POC","reference":false,"value":"POC","parameters":{"name":"u_cloud_environment_workload"}},{"used":false,"label":"Platform Workload","image":"","selected":false,"missing":false,"rawLabel":"Platform Workload","reference":false,"value":"Platform Workload","parameters":{"name":"u_cloud_environment_workload"}}]},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.Table","label":"3 - Look Up Records➛Run Phase Template Table","reference":"x_asmln_cloud_wo_1_run_phase_template","reference_display":"Run Phase Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"269b6814-c5a8-4ab0-b26b-cd82e20e2645.Records","label":"3 - Look Up Records➛Run Phase Template Records","reference":"x_asmln_cloud_wo_1_run_phase_template","reference_display":"Run Phase Template","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Cloud Workload Workflow Record","reference":"x_asmln_cloud_wo_1_cloud_workload_workflow","reference_display":"Cloud Workload Workflow","type":"reference","base_type":"reference","attributes":{}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.Records","label":"1 - Look Up Records➛Run Records","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.Table","label":"1 - Look Up Records➛Run Table","reference":"x_asmln_cloud_wo_1_run","reference_display":"Run","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1052f284-71ec-45ab-a0c8-2330d113fcdb.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Create Run on Workload Workflow creation</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Run on Workload Workflow creation">a7f0d6c98767c55064dc31973cbb358c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>9ce1c6d98790991082c80d0c8bbb35e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9ce1c6d98790991082c80d0c8bbb35e7^sys_idNOT IN2ce10ad98790991082c80d0c8bbb3567"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ce10ad98790991082c80d0c8bbb3567</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2ce10ad98790991082c80d0c8bbb3567"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2ce10ad98790991082c80d0c8bbb3567</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>68e10ad98790991082c80d0c8bbb3569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_cloud_workload_workflow</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2ce10ad98790991082c80d0c8bbb3567</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>a4e10ad98790991082c80d0c8bbb3569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9ce1c6d98790991082c80d0c8bbb35e7^sys_idNOT IN10e1c6d98790991082c80d0c8bbb35e9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9ce1c6d98790991082c80d0c8bbb35e7</id>
+        <name>Create Run on Workload Workflow creation</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>10e1c6d98790991082c80d0c8bbb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=10e1c6d98790991082c80d0c8bbb35e9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9ce1c6d98790991082c80d0c8bbb35e7^sys_idNOT IN58e1c6d98790991082c80d0c8bbb35ea,d4e1c6d98790991082c80d0c8bbb35fa"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</model>
+        <model_id>9ce1c6d98790991082c80d0c8bbb35e7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9ce1c6d98790991082c80d0c8bbb35e7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>58e1c6d98790991082c80d0c8bbb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</model>
+        <model_id>9ce1c6d98790991082c80d0c8bbb35e7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9ce1c6d98790991082c80d0c8bbb35e7</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d4e1c6d98790991082c80d0c8bbb35fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9ce1c6d98790991082c80d0c8bbb35e7^sys_idNOT IN10e10ad98790991082c80d0c8bbb3549,60e10ad98790991082c80d0c8bbb355e,ace10ad98790991082c80d0c8bbb3565"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>10e10ad98790991082c80d0c8bbb3549</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <ui_id>1052f284-71ec-45ab-a0c8-2330d113fcdb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=10e10ad98790991082c80d0c8bbb3549"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>10e10ad98790991082c80d0c8bbb3549</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>d0e10ad98790991082c80d0c8bbb354b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_run</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=10e10ad98790991082c80d0c8bbb3549"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>10e10ad98790991082c80d0c8bbb3549</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>9ce10ad98790991082c80d0c8bbb354a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>workload_workflow={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>10e10ad98790991082c80d0c8bbb3549</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>50e10ad98790991082c80d0c8bbb354b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=10e10ad98790991082c80d0c8bbb3549"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=10e10ad98790991082c80d0c8bbb3549"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</flow>
+        <order>3</order>
+        <parent_ui_id>a83703f9-ef2c-4292-83c1-2655123b7abd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>60e10ad98790991082c80d0c8bbb355e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <ui_id>269b6814-c5a8-4ab0-b26b-cd82e20e2645</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60e10ad98790991082c80d0c8bbb355e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60e10ad98790991082c80d0c8bbb355e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>e8e10ad98790991082c80d0c8bbb355f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_run_phase_template</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60e10ad98790991082c80d0c8bbb355e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>60e10ad98790991082c80d0c8bbb355e</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>a4e10ad98790991082c80d0c8bbb355f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>for_workload_type={{Created_1.current.workload.u_workload_type}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>60e10ad98790991082c80d0c8bbb355e</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>68e10ad98790991082c80d0c8bbb355f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60e10ad98790991082c80d0c8bbb355e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60e10ad98790991082c80d0c8bbb355e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</flow>
+        <order>5</order>
+        <parent_ui_id>1a0a27c6-3067-4c92-a64b-12e7083efa20</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ace10ad98790991082c80d0c8bbb3565</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <ui_id>3073223d-aa17-4ca7-a6a2-23283dd55ac5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ace10ad98790991082c80d0c8bbb3565"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ace10ad98790991082c80d0c8bbb3565</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>a4e10ad98790991082c80d0c8bbb3567</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <value>x_asmln_cloud_wo_1_run</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ace10ad98790991082c80d0c8bbb3565"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ace10ad98790991082c80d0c8bbb3565</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>60e10ad98790991082c80d0c8bbb3567</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ace10ad98790991082c80d0c8bbb3565</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>24e10ad98790991082c80d0c8bbb3567</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>workload_workflow={{Created_1.current}}^title={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.title}}^category={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.category}}^description={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.description}}^for_workload_type={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.for_workload_type}}^sort_order={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.sort_order}}^track={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item.track}}^run_phase_template={{1a0a27c6-3067-4c92-a64b-12e7083efa20.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ace10ad98790991082c80d0c8bbb3565"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ace10ad98790991082c80d0c8bbb3565"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9ce1c6d98790991082c80d0c8bbb35e7^sys_idNOT IN58e10ad98790991082c80d0c8bbb3512,9ce10ad98790991082c80d0c8bbb3517"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7f545e8d87e7c55064dc31973cbb350c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>58e10ad98790991082c80d0c8bbb3512</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <ui_id>a83703f9-ef2c-4292-83c1-2655123b7abd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=58e10ad98790991082c80d0c8bbb3512"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>58e10ad98790991082c80d0c8bbb3512</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>98e10ad98790991082c80d0c8bbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <value>No Run records exist for Workload Workflow</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=58e10ad98790991082c80d0c8bbb3512"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>58e10ad98790991082c80d0c8bbb3512</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>18e10ad98790991082c80d0c8bbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{1052f284-71ec-45ab-a0c8-2330d113fcdb.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>58e10ad98790991082c80d0c8bbb3512</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>50e10ad98790991082c80d0c8bbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=58e10ad98790991082c80d0c8bbb3512"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=58e10ad98790991082c80d0c8bbb3512"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">61f55289872bc55064dc31973cbb35f7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Run on Workload Workflow creation">9ce1c6d98790991082c80d0c8bbb35e7</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a83703f9-ef2c-4292-83c1-2655123b7abd</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9ce10ad98790991082c80d0c8bbb3517</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <ui_id>1a0a27c6-3067-4c92-a64b-12e7083efa20</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9ce10ad98790991082c80d0c8bbb3517"/>
+    <sys_element_mapping action="delete_multiple" query="id=9ce10ad98790991082c80d0c8bbb3517"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>9ce10ad98790991082c80d0c8bbb3517</id>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_id>90e10ad98790991082c80d0c8bbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{269b6814-c5a8-4ab0-b26b-cd82e20e2645.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9ce10ad98790991082c80d0c8bbb3517"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ce10ad98790991082c80d0c8bbb3517"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9ce1c6d98790991082c80d0c8bbb35e7^sys_idNOT IN50e1c6d98790991082c80d0c8bbb35ff,9ce1c6d98790991082c80d0c8bbb35f6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9ce1c6d98790991082c80d0c8bbb35e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>50e1c6d98790991082c80d0c8bbb35ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9ce1c6d98790991082c80d0c8bbb35e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-24 08:49:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9ce1c6d98790991082c80d0c8bbb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-24 08:49:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9ce1c6d98790991082c80d0c8bbb35e7"/>
+    <sys_hub_flow action="update">
+        <sys_id>a7f0d6c98767c55064dc31973cbb358c</sys_id>
+        <latest_snapshot>9ce1c6d98790991082c80d0c8bbb35e7</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

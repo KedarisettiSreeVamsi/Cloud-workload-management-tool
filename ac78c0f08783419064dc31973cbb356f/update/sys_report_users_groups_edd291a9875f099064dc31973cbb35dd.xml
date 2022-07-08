@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Cloud Workloads Test Report">25d291a9875f099064dc31973cbb35dd</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-06 06:59:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>edd291a9875f099064dc31973cbb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>25d291a9875f099064dc31973cbb35dd</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_report_users_groups_edd291a9875f099064dc31973cbb35dd</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-06 06:59:56</sys_updated_on>
+        <user_id display_value="Sandor Janssen">503b3cda1b3e94505255ec25bd4bcbba</user_id>
+    </sys_report_users_groups>
+</record_update>

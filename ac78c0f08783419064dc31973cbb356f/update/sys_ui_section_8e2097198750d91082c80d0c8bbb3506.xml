@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Workload Information" section_id="8e2097198750d91082c80d0c8bbb3506" sys_domain="global" table="x_asmln_cloud_wo_1_cloud_workload_workflow" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>da20d7198750d91082c80d0c8bbb3512</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <text>The following questionnaire is intended to get a good understanding of the initial scope of the workload, which is considered to MVP we want to bring live with this process. After go-live, a workload can develop for which the workload team is responsible to keep the workload information complete with their stakeholders. 
+Action holder: business owner + DevOps team</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>d220d7198750d91082c80d0c8bbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <text>Please describe the service/product that you deliver for ASML with your team</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9620d7198750d91082c80d0c8bbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <text>What is the problem you aim to solve with this workload? And why is Cloud a possible outcome for this problem? Please provide a brief explanation</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>5a20d7198750d91082c80d0c8bbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <text>Can you define the scope/objective for this workload? The requirements are based on this scope</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>1e20d7198750d91082c80d0c8bbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <text>Do you expect your workload requires any of these key characteristics?</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>de20d7198750d91082c80d0c8bbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <text>Who are the end-users and do you have an expected number of users?</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9220d7198750d91082c80d0c8bbb3514</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <text>Can you list down the data sources you expect to use for your workload (based on scope)</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>da20d7198750d91082c80d0c8bbb3512</element>
+            <position>0</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9a20d7198750d91082c80d0c8bbb3514</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>d220d7198750d91082c80d0c8bbb3513</element>
+            <position>1</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9e20d7198750d91082c80d0c8bbb3514</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>background</element>
+            <position>2</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9220d7198750d91082c80d0c8bbb3515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>9620d7198750d91082c80d0c8bbb3513</element>
+            <position>3</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9620d7198750d91082c80d0c8bbb3515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>problem_statement</element>
+            <position>4</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9a20d7198750d91082c80d0c8bbb3515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>5a20d7198750d91082c80d0c8bbb3513</element>
+            <position>5</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9e20d7198750d91082c80d0c8bbb3515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>scope</element>
+            <position>6</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9220d7198750d91082c80d0c8bbb3516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>1e20d7198750d91082c80d0c8bbb3513</element>
+            <position>7</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9620d7198750d91082c80d0c8bbb3516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>key_characteristics</element>
+            <position>8</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9a20d7198750d91082c80d0c8bbb3516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>de20d7198750d91082c80d0c8bbb3513</element>
+            <position>9</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9e20d7198750d91082c80d0c8bbb3516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>users</element>
+            <position>10</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9220d7198750d91082c80d0c8bbb3517</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>9220d7198750d91082c80d0c8bbb3514</element>
+            <position>11</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9620d7198750d91082c80d0c8bbb3517</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>data_sources</element>
+            <position>12</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:48</sys_created_on>
+            <sys_id>9a20d7198750d91082c80d0c8bbb3517</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Workload Information" display_value="Workload Information" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sys_domain="global" view="Default view">8e2097198750d91082c80d0c8bbb3506</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Workload Information</caption>
+            <header>false</header>
+            <name>x_asmln_cloud_wo_1_cloud_workload_workflow</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 14:31:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e2097198750d91082c80d0c8bbb3506</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_asmln_cloud_wo_1_cloud_workload_workflow</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+            <sys_update_name>sys_ui_section_8e2097198750d91082c80d0c8bbb3506</sys_update_name>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 14:31:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

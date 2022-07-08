@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Cloud Workload Workflow" max_length="40" name="x_asmln_cloud_wo_1_cloud_workload_workflow" sizeclass="243" type="collection">
+        <element label="Background" max_length="1000" name="background" type="string"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
+        <element label="Data Sources" max_length="1000" name="data_sources" type="string"/>
+        <element label="Key Characteristics" max_length="4000" name="key_characteristics" reference="x_asmln_cloud_wo_1_key_characteristic" type="glide_list"/>
+        <element label="Problem Statement" max_length="1000" name="problem_statement" type="string"/>
+        <element label="Scope" max_length="1000" name="scope" type="string"/>
+        <element label="Users" max_length="250" name="users" type="string"/>
+        <element display="true" label="Cloud Workload" max_length="32" name="workload" read_only="true" reference="u_cloud_environment_workload" type="reference"/>
+        <index name="index">
+            <element name="workload"/>
+        </index>
+    </element>
+</database>

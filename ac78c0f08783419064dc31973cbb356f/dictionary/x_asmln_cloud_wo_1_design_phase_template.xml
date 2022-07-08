@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_asmln_cloud_wo_1_workflow_phase" label="Design Phase Template" max_length="40" name="x_asmln_cloud_wo_1_design_phase_template" sizeclass="9" type="collection">
+        <element label="Instructions How" max_length="1000" name="instructions_how" type="string"/>
+        <element label="Instructions What" max_length="250" name="instructions_what" type="string"/>
+        <element label="Instructions When" max_length="250" name="instructions_when" type="string"/>
+        <element label="Instructions Who" max_length="250" name="instructions_who" type="string"/>
+        <element label="Instructions Why" max_length="250" name="instructions_why" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">aa000b4287abc55064dc31973cbb35e3</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-20 14:29:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>62000b4287abc55064dc31973cbb35e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>aa000b4287abc55064dc31973cbb35e3</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_report_users_groups_62000b4287abc55064dc31973cbb35e4</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-20 14:29:42</sys_updated_on>
+        <user_id display_value="Sandor Janssen">503b3cda1b3e94505255ec25bd4bcbba</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</application>
+        <file_path/>
+        <instance_id>d6146579db9b8748d5c37236bf96199a</instance_id>
+        <instance_name>asmlitsmdev</instance_name>
+        <name>sys_report_users_groups_62000b4287abc55064dc31973cbb35e4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">aa000b4287abc55064dc31973cbb35e3</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>sjansse2</sys_created_by><sys_created_on>2022-05-20 14:29:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>62000b4287abc55064dc31973cbb35e4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>aa000b4287abc55064dc31973cbb35e3</sys_name><sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope><sys_update_name>sys_report_users_groups_62000b4287abc55064dc31973cbb35e4</sys_update_name><sys_updated_by>sjansse2</sys_updated_by><sys_updated_on>2022-05-20 14:29:42</sys_updated_on><user_id display_value="Sandor Janssen">503b3cda1b3e94505255ec25bd4bcbba</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-2099644656</payload_hash>
+        <record_name>aa000b4287abc55064dc31973cbb35e3</record_name>
+        <reverted_from/>
+        <source>4a20d13d87274d1064dc31973cbb3521</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-20 14:29:42</sys_created_on>
+        <sys_id>e6000b4287abc55064dc31973cbb35e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180e1dfce570000001</sys_recorded_at>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-20 14:29:42</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>ee000b426aabc5506e3e70f05a4471e5</update_guid>
+        <update_guid_history>ee000b426aabc5506e3e70f05a4471e5:-2099644656</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-30 12:10:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>6a27d31841214a808ab33d1eee989251</sys_id>
+        <sys_metadata>62000b4287abc55064dc31973cbb35e4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>aa000b4287abc55064dc31973cbb35e3</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_scope_delete display_value="">911020ba0caa4f31bbdd36bbf8c837a1</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_62000b4287abc55064dc31973cbb35e4</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_62000b4287abc55064dc31973cbb35e4">e6000b4287abc55064dc31973cbb35e6</sys_update_version>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-30 12:10:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

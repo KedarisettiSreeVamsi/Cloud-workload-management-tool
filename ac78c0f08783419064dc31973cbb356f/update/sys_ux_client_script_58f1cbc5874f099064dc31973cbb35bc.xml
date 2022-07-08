@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Trigger risk assessment">c4f1cbc5874f099064dc31973cbb3596</macroponent>
+        <name>handle events</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    var {name,payload} = event;
+    var options = `{"domain": "", "riskId": "${api.state.risk}", "ramId": "${api.state.ram}"}`;
+    //Item Selected
+    if (name === 'NOW_TYPEAHEAD#SELECTED_ITEM_SET') {
+        //risk
+        if(event.elementId == 'risk'){
+            if (payload.value) {
+                api.setState('risk',payload.value);
+            }else{
+                api.setState('risk','');
+            }
+        }
+        
+        //ram
+        if(event.elementId == 'ram'){
+            if (payload.value) {
+                api.setState('ram',payload.value);
+            }else{
+                api.setState('ram','');
+            }
+        }
+        
+        //assessor
+        if(event.elementId == 'assessor'){
+            if (payload.value) {
+                api.setState('assessor',payload.value);
+            }else{
+                api.setState('assessor','');
+            }
+        }
+        
+        //approver
+        if(event.elementId == 'approver'){
+            if (payload.value) {
+                api.setState('approver',payload.value);
+            }else{
+                api.setState('approver','');
+            }
+        }
+    }
+
+    //Searching in typeAhead component
+    if (name === "NOW_TYPEAHEAD#VALUE_SET") {
+        var searchString = payload.value;
+        
+        //risk search
+        if (event.elementId == 'risk') {
+           if (searchString) {
+               helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getRiskChoices?searchString=' + [searchString], {
+                   method: "GET",
+                   batch: false
+
+               }).then(({ response }) => {
+                   var {result} = response;
+                       api.setState('risksList', result.risks.riskChoices);
+               });
+            } else {
+               api.setState("risksList", api.state.defaultRiskList);
+            }
+        }
+        
+        //ram
+        if (event.elementId == 'ram') {
+           if (searchString) {
+               helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getRiskAssessmentMethodologyChoices?risk='+[api.state.risk]+'&searchString=' + [searchString], {
+                   method: "GET",
+                   batch: false
+
+               }).then(({ response }) => {
+                   var {result} = response;
+                       api.setState('ramsList', result.rams.ramChoices);
+               });
+            } else {
+               api.setState("ramsList", api.state.defaultRamList);
+            }
+        }
+
+        
+        //assessor and approver search
+        if ((event.elementId == 'assessor' || event.elementId == 'approver')) {
+           if (searchString) {
+               //Query users
+               helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getAssessmentUsers?searchString=' + [searchString]+'&type=' + [event.elementId]+'&options=' + [options], {
+                   method: "GET",
+                   batch: false
+
+               }).then(({
+                   response
+               }) => {
+                   var {
+                       result
+                   } = response;
+                   if (event.elementId == 'assessor') {
+                       api.setState('assessorList', result.users.assigneeChoices);
+                   }
+                   if (event.elementId == 'approver')
+                       api.setState('approverList', result.users.assigneeChoices);
+
+               });
+
+               //Query group
+               helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getAssessorOrApproverGroups?searchString=' + [searchString]+'&type=' + [event.elementId]+'&options=' + [options],{
+                   method: "GET",
+                   batch: false
+
+               }).then(({
+                   response
+               }) => {
+                   var {
+                       result
+                   } = response;
+                   if (event.elementId == 'assessor') {
+                       api.setState('assessorGroupsList', result.groups.groupChoices);
+                   }
+                   if (event.elementId == 'approver')
+                       api.setState('approverGroupsList', result.groups.groupChoices);
+
+               });
+           } else {
+               if (event.elementId == 'assessor') {
+                   api.setState("assessorList", api.state.defaultAssessorUserList);
+                   api.setState('assessorGroupsList', api.state.defaultAssessorGroupList);
+               }
+               if (event.elementId == 'approver'){
+                   api.setState("approverList", api.state.defaultApproverUserList);
+                   api.setState('approverGroupsList', api.state.defaultApproverGroupList);
+               }
+           }
+       }
+    }
+
+    //Days to overdue field
+    if (name === 'NOW_INPUT#INPUT'){
+        var value = payload.fieldValue;
+        if(payload.fieldValue<1)
+            value="";
+        api.setState("daysToOverdue",value);     
+    }
+
+    if (name === 'NOW_SELECT#SELECTED_ITEM_SET') {
+        //assesssorType
+        if(event.elementId == 'assessor_type'){
+            if (payload.value) {
+                api.setState('assessorType',payload.value);
+                api.setState('assessor','');
+                if(payload.value=="user"||payload.value=="group"){
+                    if(payload.value=="user"){
+                        //Get assessor users
+                        helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getAssessmentUsers?type=assessor'+'&options=' + [options], {
+                            method: "GET",
+                            batch: false
+
+                        }).then(({response}) => {
+                            var {result} = response;
+                            api.setState('defaultAssessorUserList', result.users.assigneeChoices);
+                            api.setState('assessorList', result.users.assigneeChoices);
+                        });
+                    } else {
+                        //Get assessor groups
+                        helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getAssessorOrApproverGroups?type=assessor'+'&options=' + [options], {
+                            method: "GET",
+                            batch: false
+
+                        }).then(({response}) => {
+                            var {result} = response;
+                            api.setState('defaultAssessorGroupList', result.groups.groupChoices);
+                            api.setState('assessorGroupsList', result.groups.groupChoices);
+                        });
+                    }
+                    api.setState('hideAssessor',false);
+                }
+                else
+                    api.setState('hideAssessor',true);
+            }else{
+                api.setState('assessorType','');
+            }
+        }
+
+        //approverType
+        if(event.elementId == 'approver_type'){
+            if (payload.value) {
+                api.setState('approverType',payload.value);
+                api.setState('approver','');
+                if(payload.value=="user"||payload.value=="group"){
+                    if(payload.value=="user"){
+                        //Get approver users
+                        helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getAssessmentUsers?type=approver'+'&options=' + [options], {
+                            method: "GET",
+                            batch: false
+                        }).then(({response}) => {
+                            var {result} = response;
+                            api.setState('defaultApproverUserList', result.users.assigneeChoices);
+                            api.setState('approverList', result.users.assigneeChoices);
+                        }); 
+                    }else{
+                        //Get approver groups
+                        helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/getAssessorOrApproverGroups?type=approver'+'&options=' + [options], {
+                            method: "GET",
+                            batch: false
+                        }).then(({response}) => {
+                            var {result} = response;
+                            api.setState('defaultApproverGroupList', result.groups.groupChoices);
+                            api.setState('approverGroupsList', result.groups.groupChoices);
+                        });
+                    }
+                    api.setState('hideApprover',false);
+                }
+                else
+                    api.setState('hideApprover',true);
+            }else{
+                api.setState('approverType','');
+            }
+        }
+    }
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:32:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>58f1cbc5874f099064dc31973cbb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>handle events</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_58f1cbc5874f099064dc31973cbb35bc</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:32:42</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

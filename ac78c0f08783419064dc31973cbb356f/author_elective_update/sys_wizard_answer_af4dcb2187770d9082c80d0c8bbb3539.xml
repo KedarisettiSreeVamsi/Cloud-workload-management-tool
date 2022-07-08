@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>New Sign-off Task</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Sign-off Task</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">a559e1b5db1303006ada1ded0b9619ce</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-31 12:26:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>af4dcb2187770d9082c80d0c8bbb3539</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sign-off Task</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_wizard_answer_af4dcb2187770d9082c80d0c8bbb3539</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-31 12:26:24</sys_updated_on>
+        <table/>
+        <target_url>x_asmln_cloud_wo_1_sign_off_task.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</application>
+        <file_path/>
+        <instance_id>d6146579db9b8748d5c37236bf96199a</instance_id>
+        <instance_name>asmlitsmdev</instance_name>
+        <name>sys_wizard_answer_af4dcb2187770d9082c80d0c8bbb3539</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>New Sign-off Task</answer><button_label/><dependent_value/><element/><name>Sign-off Task</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">a559e1b5db1303006ada1ded0b9619ce</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>sjansse2</sys_created_by><sys_created_on>2022-05-31 12:26:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>af4dcb2187770d9082c80d0c8bbb3539</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Sign-off Task</sys_name><sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope><sys_update_name>sys_wizard_answer_af4dcb2187770d9082c80d0c8bbb3539</sys_update_name><sys_updated_by>sjansse2</sys_updated_by><sys_updated_on>2022-05-31 12:26:24</sys_updated_on><table/><target_url>x_asmln_cloud_wo_1_sign_off_task.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>642493462</payload_hash>
+        <record_name>Sign-off Task</record_name>
+        <reverted_from/>
+        <source>0688c7e987b30d9082c80d0c8bbb3518</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-31 12:26:24</sys_created_on>
+        <sys_id>2b4dcb2187770d9082c80d0c8bbb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1811a14e0a50000001</sys_recorded_at>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-31 12:26:24</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>234dcb2178770d9041ab3aeab710db3c</update_guid>
+        <update_guid_history>234dcb2178770d9041ab3aeab710db3c:642493462</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-06-01 09:07:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>5d4fce48698f4469b2f966fea0e419f1</sys_id>
+        <sys_metadata>af4dcb2187770d9082c80d0c8bbb3539</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sign-off Task</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_parent display_value="Task">a559e1b5db1303006ada1ded0b9619ce</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_scope_delete display_value="">911020ba0caa4f31bbdd36bbf8c837a1</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_af4dcb2187770d9082c80d0c8bbb3539</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_af4dcb2187770d9082c80d0c8bbb3539">2b4dcb2187770d9082c80d0c8bbb353c</sys_update_version>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-06-01 09:07:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

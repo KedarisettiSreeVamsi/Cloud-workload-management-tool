@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record">b167ba0d87cb099064dc31973cbb356e</macroponent>
+        <name>Record Modal</name>
+        <required_translations/>
+        <script><![CDATA[function handler({
+        api,
+        event,
+        imports,
+        helpers
+    }) {
+    
+    const { name, payload: { route, fields, params, size = 'md', ariaLabel}} = event;
+    
+    if (name === 'RECORD#CLOSE_MODAL')
+        helpers.modal.close();
+    
+    else if (name === 'RECORD#OPEN_MODAL') {
+        if (!route)
+            return;
+        
+        api.setState('bare', true);
+        api.setState('displayOptions', { size: size, label: ariaLabel });
+        api.setState('contents', {
+            route: route,
+            fields: fields,
+            params: params
+        });
+    }
+    
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 14:46:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a2673a41870f099064dc31973cbb3556</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Modal</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_a2673a41870f099064dc31973cbb3556</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 14:46:42</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

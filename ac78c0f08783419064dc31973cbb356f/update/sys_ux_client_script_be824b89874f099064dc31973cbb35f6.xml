@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Data Navigator">d6824b89874f099064dc31973cbb3512</macroponent>
+        <name>Set dropdown items</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * Set items for views dropdown menu
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+async function handler({ api, event, helpers, imports }) {
+  const DEFAULT = await helpers.translate("Default");
+  const { config_views = {} } = api.data;
+  const {
+    results = {
+      _row_data: { uniqueValue: "default" },
+      name: { displayValue: DEFAULT },
+      is_default: { value: true },
+    },
+  } = config_views;
+  const configItems = results.map((view) => {
+    const { name, is_default, _row_data } = view;
+    const { uniqueValue: id } = _row_data;
+    const { displayValue: label } = name;
+    const { value: isDefault } = is_default;
+    const item = {
+      id,
+      label,
+      isDefault,
+    };
+
+    return item;
+  });
+  const { dataNavView } = api.state;
+  const currentView = configItems.find((item) => item.label === dataNavView);
+  const selectedView = currentView
+    ? currentView.id
+    : (configItems.find((item) => item.isDefault) || {}).id;
+
+  // sort views alphabetically, with default coming in last 
+  configItems.sort((view1, view2) => {
+    if(view1.isDefault) return 1;
+    if(view2.isDefault) return -1;
+    return ('' + view1.label).localeCompare(view2.label, undefined, {numeric: true});
+  });
+  const isDisabled = configItems.length <= 1;
+
+  api.setState("dropdownItems", configItems);
+  api.setState("dropdownSelectedItems", [selectedView]);
+  api.setState("dropdownDisabled", isDisabled);
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:35:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>be824b89874f099064dc31973cbb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set dropdown items</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_be824b89874f099064dc31973cbb35f6</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:35:20</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_asmln_cloud_wo_1_design</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-16 14:38:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>93cbdafc8767415064dc31973cbb3560</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_asmln_cloud_wo_1_design</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_security_acl_93cbdafc8767415064dc31973cbb3560</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-16 14:38:58</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</application>
+        <file_path/>
+        <instance_id>d6146579db9b8748d5c37236bf96199a</instance_id>
+        <instance_name>asmlitsmdev</instance_name>
+        <name>sys_security_acl_93cbdafc8767415064dc31973cbb3560</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><name>x_asmln_cloud_wo_1_design</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>sjansse2</sys_created_by><sys_created_on>2022-05-16 14:38:58</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>93cbdafc8767415064dc31973cbb3560</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_asmln_cloud_wo_1_design</sys_name><sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope><sys_update_name>sys_security_acl_93cbdafc8767415064dc31973cbb3560</sys_update_name><sys_updated_by>sjansse2</sys_updated_by><sys_updated_on>2022-05-16 14:38:58</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>952563993</payload_hash>
+        <record_name>x_asmln_cloud_wo_1_design</record_name>
+        <reverted_from/>
+        <source>e05c342287df8d1464dc31973cbb3577</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-16 14:38:59</sys_created_on>
+        <sys_id>d7cb523087a7415064dc31973cbb35be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180cd4edc190000001</sys_recorded_at>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-16 14:38:59</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>dfcb523077a74150e575082efb0c8fbd</update_guid>
+        <update_guid_history>dfcb523077a74150e575082efb0c8fbd:952563993</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-05-20 11:16:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>77be4f632c03438ca6c90bff96357890</sys_id>
+        <sys_metadata>93cbdafc8767415064dc31973cbb3560</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_asmln_cloud_wo_1_design</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_parent display_value="x_asmln_cloud_wo_1_design">af2b25f08723015064dc31973cbb35de</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_scope_delete display_value="">911020ba0caa4f31bbdd36bbf8c837a1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_93cbdafc8767415064dc31973cbb3560</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_93cbdafc8767415064dc31973cbb3560">d7cb523087a7415064dc31973cbb35be</sys_update_version>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-05-20 11:16:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

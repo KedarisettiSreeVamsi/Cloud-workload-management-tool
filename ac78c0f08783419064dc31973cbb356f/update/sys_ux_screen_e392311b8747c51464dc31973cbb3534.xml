@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Cloud Workload Management Tool Config">0db7fe1e448f05d0a80eb7db3c3ad59c</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckyowddccddggaaaaaawddeiihhpvsffcchzw",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY_RELAY_0f91ce42530720106b36ddeeff7b12ad",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY_RELAY_0f91ce42530720106b36ddeeff7b12ad",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "query" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "query" ]
+            }
+          },
+          "prevQuery" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "prevQuery" ]
+            }
+          },
+          "table" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "table" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8a1e676c53b710108135ddeeff7b1285"
+    },
+    "operation" : null,
+    "targetId" : "ckyowddccddggaaaaaavddeiihhgglcoxffbq",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckyorzgceaaaaeerddehhwswcgccpof",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#SWITCH_TAB",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#SWITCH_TAB",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "query" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "query" ]
+            }
+          },
+          "prevQuery" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "prevQuery" ]
+            }
+          },
+          "table" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "table" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8a1e676c53b710108135ddeeff7b1285"
+    },
+    "operation" : null,
+    "targetId" : "ckyorzgceaaaaeeqddehhwhhfyddhhodda",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckuddxpyaanaaaaccoddeiieefleeqaany",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.REFRESH_TIMELINE",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.REFRESH_TIMELINE",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#REFRESH_REQUESTED_RELAY",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "7b5ee76c53b710108135ddeeff7b12f5"
+    },
+    "operation" : null,
+    "targetId" : "ckuddxpyaanaaaaccpddeiieenaiionob",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cktaajjgccucaaaacceeddhiihhpiqggfamu",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MODAL_SELECTED_RELAY_0f91ce42530720106b36ddeeff7b12ad",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MODAL_SELECTED_RELAY_0f91ce42530720106b36ddeeff7b12ad",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "modalId" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "modalId" ]
+            }
+          },
+          "showModal" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "showModal" ]
+            }
+          },
+          "displayOptions" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "displayOptions" ]
+            }
+          },
+          "bare" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "bare" ]
+            }
+          },
+          "preserveState" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "preserveState" ]
+            }
+          }
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "cktaajjgccubaaaaccddddhiihhesveenzeea",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cktaajjiilgkaaaaaatddhiigghhiihsgpmf",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#CLOSE_FIELD_CHANGE_JUSTIFICATION_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#CLOSE_FIELD_CHANGE_JUSTIFICATION_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "modalId" : "[component-id$='field_change_justification_modal']",
+          "showModal" : null,
+          "displayOptions" : null,
+          "bare" : true,
+          "preserveState" : null
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "cktaajjiilgkaaaaaauddhiiggbyhjjrleev",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cktaahhihfvaaaaaarddhiiiislwycvdjj",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#CLOSE_FIELD_CHANGE_JUSTIFICATION_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#CLOSE_FIELD_CHANGE_JUSTIFICATION_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "modalId" : "[component-id$='field_change_justification_modal']",
+          "showModal" : null,
+          "displayOptions" : null,
+          "bare" : true,
+          "preserveState" : null
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "cktaahhihfvaaaaaasddhiiiirffddoeeskjj",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cktaaccjjddnkaaaaaaqddhiigghxoddlcchdd",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OPEN_FIELD_CHANGE_JUSTIFICATION_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OPEN_FIELD_CHANGE_JUSTIFICATION_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "modalId" : "[component-id$='field_change_justification_modal']",
+          "showModal" : true,
+          "displayOptions" : null,
+          "bare" : true,
+          "preserveState" : null
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "cktaaccjjddnlaaaaaarddhiiggccsvffust",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckszzjmjwaaaaaaoddhiiggocciihhjtggf",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OPEN_STATE_CHANGE_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OPEN_STATE_CHANGE_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "modalId" : "[component-id$='state_change_modal']",
+          "showModal" : true,
+          "displayOptions" : null,
+          "bare" : true,
+          "preserveState" : null
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "ckszzjmjwaaaaaapddhiiggbblbblaiibbg",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cknffgwjjmhhaaaaaadddghhyffrkpiibbcii",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM_DETAIL#REFRESH_RECORD_HEADER",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM_DETAIL#REFRESH_RECORD_HEADER",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#REFRESH_REQUESTED_RELAY",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "7b5ee76c53b710108135ddeeff7b12f5"
+    },
+    "operation" : null,
+    "targetId" : "cknffgwjjmhhaaaaaaeddghhyyvhfzaabbb",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="MSI Details">0f91ce42530720106b36ddeeff7b12ad</macroponent>
+        <macroponent_config>{
+  "refresh" : "",
+  "sysId" : "",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false,
+  "headingOnlyVisibleToScreenReaders" : false
+}</macroponent_config>
+        <name>MSI Details</name>
+        <order>0</order>
+        <parent_macroponent display_value="Cloud Workload">64a401878703c11464dc31973cbb3539</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="MSI Details">ef92311b8747c51464dc31973cbb352a</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-29 09:32:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e392311b8747c51464dc31973cbb3534</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MSI Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_screen_e392311b8747c51464dc31973cbb3534</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-29 09:32:28</sys_updated_on>
+    </sys_ux_screen>
+</record_update>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Cloud Workload Management Tool Config">0db7fe1e448f05d0a80eb7db3c3ad59c</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckvwcgeewzaaaajjcddeiiiicccmqybbti",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#CLOSE_COLLAB_TIMELINE_EVENT_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#CLOSE_COLLAB_TIMELINE_EVENT_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "modalId" : "[component-id$='add_collab_event']",
+          "showModal" : null,
+          "displayOptions" : null,
+          "bare" : true,
+          "preserveState" : null
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "ckvwcgeexaaaaaajjdddeiiiipddhhobbcc",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckvajqchhdaaaabbtddeiiffaggjjheenycc",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OPEN_COLLAB_EVENT_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OPEN_COLLAB_EVENT_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "modalId" : "[component-id$='add_collab_event']",
+          "showModal" : true,
+          "displayOptions" : null,
+          "bare" : true,
+          "preserveState" : null
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "ckvajqchhdaaaabbuddeiiffaaiihhhbbfja",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckvajoggzraaaabbrddeiifferrzjjubaa",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OPEN_COLLAB_EVENT_DELETE_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OPEN_COLLAB_EVENT_DELETE_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "modalId" : "[component-id$='remove_collab_event']",
+          "showModal" : true,
+          "displayOptions" : null,
+          "bare" : null,
+          "preserveState" : null
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "ckvajoggzraaaabbsddeiiffkakqeeiiddq",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckvajoggznaaaabbpddeiiffebzsdhhp",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OPEN_COLLAB_EVENT_DELETE_MODAL",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OPEN_COLLAB_EVENT_DELETE_MODAL",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "ckvajoggznaaaabbqddeiiffuigawjjgq",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="External Collaboration">d173fd58e7b220106b3663c343f6a9dc</macroponent>
+        <macroponent_config>{
+  "assignmentGroup" : "",
+  "currentTime" : "",
+  "stateLabel" : "",
+  "sysId" : "",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false,
+  "headingOnlyVisibleToScreenReaders" : false
+}</macroponent_config>
+        <name>External Collaboration</name>
+        <order>8000</order>
+        <parent_macroponent display_value="Cloud Workload">64a401878703c11464dc31973cbb3539</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="External Collaboration">5d72bd578747c51464dc31973cbb3573</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-29 09:31:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>1172bd578747c51464dc31973cbb35a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>External Collaboration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_screen_1172bd578747c51464dc31973cbb35a6</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-29 09:31:46</sys_updated_on>
+    </sys_ux_screen>
+</record_update>

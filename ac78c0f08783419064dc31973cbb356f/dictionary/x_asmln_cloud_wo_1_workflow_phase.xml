@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Workflow Phase Base" max_length="40" name="x_asmln_cloud_wo_1_workflow_phase" sizeclass="56" type="collection">
+        <element label="Category" max_length="100" name="category" type="string"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element choice="3" label="For Workload Type" max_length="40" name="for_workload_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Standard" sequence="0" value="standard"/>
+                <element inactive_on_update="false" label="POC" sequence="1" value="poc"/>
+                <element inactive_on_update="false" label="Platform Workload" sequence="2" value="platform_workload"/>
+            </choice>
+        </element>
+        <element label="Sort Order" max_length="40" name="sort_order" type="integer"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element display="true" label="Title" max_length="100" name="title" type="string"/>
+        <element choice="1" label="Track" max_length="40" name="track" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Security &amp; Risk Track" sequence="0" value="security_risk_track"/>
+                <element inactive_on_update="false" label="Service Management Track" sequence="1" value="service_management_track"/>
+                <element inactive_on_update="false" label="Cost Management Track" sequence="2" value="cost_management_track"/>
+                <element inactive_on_update="false" label="Milestones" sequence="3" value="milestones"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

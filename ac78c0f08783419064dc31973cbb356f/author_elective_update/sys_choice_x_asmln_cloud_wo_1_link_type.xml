@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_asmln_cloud_wo_1_link" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_asmln_cloud_wo_1_link</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 13:08:32</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ea1dbedd875c991082c80d0c8bbb35f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+            <sys_update_name>sys_choice_x_asmln_cloud_wo_1_link_type</sys_update_name>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 13:08:32</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Azure DevOps Project</label>
+            <language>en</language>
+            <name>x_asmln_cloud_wo_1_link</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 13:08:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>661dbedd875c991082c80d0c8bbb35f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 13:08:32</sys_updated_on>
+            <value>azure_devops_project</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sharepoint Workload Folder</label>
+            <language>en</language>
+            <name>x_asmln_cloud_wo_1_link</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 13:08:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>661dbedd875c991082c80d0c8bbb35f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 13:08:32</sys_updated_on>
+            <value>sharepoint_workload_folder</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Solution Design</label>
+            <language>en</language>
+            <name>x_asmln_cloud_wo_1_link</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 13:21:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b910071187dc991082c80d0c8bbb35e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 13:21:35</sys_updated_on>
+            <value>solution_design</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cloudability</label>
+            <language>en</language>
+            <name>x_asmln_cloud_wo_1_link</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-06-24 13:57:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65388f158710d91082c80d0c8bbb35b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-06-24 13:57:04</sys_updated_on>
+            <value>cloudability</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

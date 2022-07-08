@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>58d17acf0b531010a8b1c96237673a68</includes>
+        <macroponent display_value="Trigger risk assessment">c4f1cbc5874f099064dc31973cbb3596</macroponent>
+        <name>navigation script</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+
+    const {
+        routeMapping,
+        buildDefaultRoutePayload
+    } = imports["global.recordRoutesMapping"]();
+
+    var route = 'record';
+    var targetRoute = '';
+    event.payload={fields:{"table":"sn_risk_advanced_risk_assessment_instance","sysId":api.state.assessmentId}};
+    const defaultRoutePayload = buildDefaultRoutePayload(route, targetRoute, event);
+    const routeMap = api.data.dynamic_routing_1.routeMap;
+    const navigationPayload = routeMapping(routeMap, defaultRoutePayload, event);
+
+    helpers.modal.close();
+    const {
+        emit
+    } = api;
+    emit('NAV_ITEM_SELECTED', navigationPayload);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:32:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>94f1cbc5874f099064dc31973cbb35d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>navigation script</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_94f1cbc5874f099064dc31973cbb35d6</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:32:42</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

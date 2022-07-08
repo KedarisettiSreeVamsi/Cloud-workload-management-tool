@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="anyobject_asmt">7fa14b85874f099064dc31973cbb35f7</macroponent>
+        <name>create any object risk assessment </name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+
+    helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/createAsmtForAnyObject', {
+        method: "POST",
+        body: {
+            table: api.context.props.table,
+            recordId: api.context.props.sysId,
+            assessorId: api.state.assessor,
+            approverId: api.state.approver
+        },
+        batch: false
+
+    }).then(({
+        response
+    }) => {
+        if (response.result.asmtNumber && !response.result.errorMsg) {
+            helpers
+                .translate('Risk assessment created successfully ')
+                .then((val) => {
+                    api.setState('successMessage', val);
+                });
+        } else {
+            api.setState('successMessage', response.result.errorMsg);
+        }
+        api.setState('assessmentNumber', response.result.asmtNumber);
+        api.setState('assessmentId', response.result.asmtSysId);
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:31:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>88b18b85874f099064dc31973cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>create any object risk assessment </sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_88b18b85874f099064dc31973cbb352f</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:31:36</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

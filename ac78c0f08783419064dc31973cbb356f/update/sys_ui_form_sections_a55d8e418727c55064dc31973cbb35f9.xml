@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="a55d8e418727c55064dc31973cbb35f9" sys_domain="global" table="x_asmln_cloud_wo_1_run" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-05-17 08:14:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd5d8e418727c55064dc31973cbb35fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_asmln_cloud_wo_1_run" name="x_asmln_cloud_wo_1_run" sys_domain="global" view="Default view">a55d8e418727c55064dc31973cbb35f9</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_asmln_cloud_wo_1_run" sys_domain="global" view="Default view">7eaf963887e7415064dc31973cbb35ea</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-05-17 08:14:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-05-17 08:14:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d5dce418727c55064dc31973cbb35c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_asmln_cloud_wo_1_run" name="x_asmln_cloud_wo_1_run" sys_domain="global" view="Default view">a55d8e418727c55064dc31973cbb35f9</sys_ui_form>
+            <sys_ui_section caption="Workload Specific" display_value="Workload Specific" name="x_asmln_cloud_wo_1_run" sys_domain="global" view="Default view">2d5d8e418727c55064dc31973cbb35f6</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-05-17 08:14:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-05-17 08:14:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d5dce418727c55064dc31973cbb35c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_asmln_cloud_wo_1_run" name="x_asmln_cloud_wo_1_run" sys_domain="global" view="Default view">a55d8e418727c55064dc31973cbb35f9</sys_ui_form>
+            <sys_ui_section caption="Instructions" display_value="Instructions" name="x_asmln_cloud_wo_1_run" sys_domain="global" view="Default view">e55d8e418727c55064dc31973cbb35f8</sys_ui_section>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-05-17 08:14:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_asmln_cloud_wo_1_run</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>sjansse2</sys_created_by>
+            <sys_created_on>2022-05-17 08:14:16</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a55d8e418727c55064dc31973cbb35f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_asmln_cloud_wo_1_run</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_a55d8e418727c55064dc31973cbb35f9</sys_update_name>
+            <sys_updated_by>sjansse2</sys_updated_by>
+            <sys_updated_on>2022-05-17 08:14:16</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

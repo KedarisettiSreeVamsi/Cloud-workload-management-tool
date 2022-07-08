@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Trigger risk assessment">c4f1cbc5874f099064dc31973cbb3596</macroponent>
+        <name>create risk assessment</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    helpers.snHttp('/api/sn_risk_advanced/riskasmntapi/triggerRiskAssessment', {
+        method: "POST",
+        body: {
+            risk: api.state.risk,
+            ram: api.state.ram,
+            assessor: api.state.assessor,
+            approver: api.state.approver,
+            assessorType: api.state.assessorType,
+            approverType: api.state.approverType,
+            daysToOverdue: api.state.daysToOverdue
+
+        },
+        batch: false
+
+    }).then(({
+        response
+    }) => {
+        if (!response.result.errorMsg) {
+            if (response.result.status == 201) {
+                helpers
+                    .translate("Risk assessment created successfully ")
+                    .then((val) => {
+                        api.setState('successMessage', val);
+                    });
+                if (api.context.props.table == "sn_risk_risk") {
+                    api.emit("GFORM#RELOAD");
+                }
+            } else {
+                api.setState('successMessage', response.result.msg);
+            }
+            api.setState('assessmentNumber', response.result.asmtNumber);
+            api.setState('assessmentId', response.result.asmtId);
+        } else {
+            api.setState('errorMessage', response.result.errorMsg);
+        }
+    });
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:32:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d0f1cbc5874f099064dc31973cbb35cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>create risk assessment</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_d0f1cbc5874f099064dc31973cbb35cf</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:32:42</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

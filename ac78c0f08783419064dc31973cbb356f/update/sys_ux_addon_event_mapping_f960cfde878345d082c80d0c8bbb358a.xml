@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Details Taxonomy Topic Selection Modal</name>
+        <parent_macroponent display_value="Record">ab5083de878345d082c80d0c8bbb354b</parent_macroponent>
+        <source_da display_value="Open taxonomy topic modal">0cd8b05fc7622010fedf0bcbe2c260ab</source_da>
+        <source_element_id>record_page_tabs_1</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-26 12:38:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>f960cfde878345d082c80d0c8bbb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Details Taxonomy Topic Selection Modal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">2577499bdb233010c1aa1ea605961932</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_f960cfde878345d082c80d0c8bbb358a</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-26 12:38:23</sys_updated_on>
+        <target_event display_value="RECORD#OPEN_MODAL">509663140f0310107d20409dc4767e00</target_event>
+        <target_payload_mapping>{&#13;
+&#13;
+  "type": "MAP_CONTAINER",&#13;
+&#13;
+  "container": {&#13;
+&#13;
+    "route": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "route"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    },&#13;
+&#13;
+    "fields": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "fields"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    },&#13;
+&#13;
+    "params": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "params"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    },&#13;
+&#13;
+    "redirect": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "redirect"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    },&#13;
+&#13;
+    "passiveNavigation": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "passiveNavigation"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    },&#13;
+&#13;
+    "title": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "title"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    },&#13;
+&#13;
+    "multiInstField": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "multiInstField"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    },&#13;
+&#13;
+    "external": {&#13;
+&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+&#13;
+      "binding": {&#13;
+&#13;
+        "address": [&#13;
+&#13;
+          "external"&#13;
+&#13;
+        ]&#13;
+&#13;
+      }&#13;
+&#13;
+    }&#13;
+&#13;
+  }&#13;
+&#13;
+}&#13;
+&#13;
+</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+</record_update>

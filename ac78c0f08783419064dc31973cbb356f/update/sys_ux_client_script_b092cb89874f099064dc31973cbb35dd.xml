@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Data Navigator">2492cb89874f099064dc31973cbb35c0</macroponent>
+        <name>Node drilldown</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * Navigate current main node map object to a new main object
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({ api, event, helpers, imports }) {
+  const { name, payload } = event;
+  const { centralObjectSysId: oldSysId, centralObjectTable: oldTable} = api.state;
+  let newTable;
+  let newSysId;
+
+  switch (name) {
+    case "NOW_RECORD_LIST_CONNECTED#PREVIEW_RECORD": {
+      const { table, row = {} } = payload;
+      const { sys_id = {} } = row;
+      const { value } = sys_id;
+      newTable = table;
+      newSysId = value;
+      break;
+    }
+    case "NOW_BREADCRUMBS#ITEM_CLICKED": {
+      const { breadcrumbsItems = [] } = api.state;
+      const { item = {} } = payload;
+      const { table, sysId, index } = item;
+      const newItems = [...breadcrumbsItems];
+      newTable = table;
+      newSysId = sysId;
+      // delete everything after selected item index
+      newItems.splice(index + 1);
+      api.setState("breadcrumbsItems", newItems);
+      api.setState("breadcrumbsSkipUpdate", true);
+      break;
+    }
+    default: {
+      return;
+    }
+  }
+
+  // skip if no table/sysId values defined
+  if (!newTable || !newSysId) {
+    return;
+  }
+  // Skip if navigation to same object
+  if (oldTable === newTable && oldSysId === newSysId){
+    return;
+  }
+   api.emit('CONTENT_UPDATED',{
+      params: {
+          timestamp: Date.now()
+      }
+  });
+  api.setState("centralObjectTable", newTable);
+  api.setState("centralObjectSysId", newSysId);
+  api.setState("displayedPane", "left");
+  
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-22 15:35:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b092cb89874f099064dc31973cbb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Node drilldown</sys_name>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_client_script_b092cb89874f099064dc31973cbb35dd</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-22 15:35:28</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

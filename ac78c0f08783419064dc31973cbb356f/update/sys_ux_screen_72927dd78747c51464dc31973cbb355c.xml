@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Cloud Workload Management Tool Config">0db7fe1e448f05d0a80eb7db3c3ad59c</app_config>
+        <description>{&#13;
+  "eventMappingId" : "cksceecffsiiaaaaccxddhiiggmiihhughpn",&#13;
+  "isConfiguration" : false,&#13;
+  "offRowStorageId" : null,&#13;
+  "sourceEventApiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED",&#13;
+  "sourceEventCorrelationId" : null,&#13;
+  "sourceEventDefinition" : {&#13;
+    "apiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED",&#13;
+    "id" : null,&#13;
+    "type" : "UXEVENT"&#13;
+  },&#13;
+  "sourceEventSysId" : null,&#13;
+  "targets" : [ {&#13;
+    "broker" : null,&#13;
+    "clientScript" : null,&#13;
+    "declarativeAction" : null,&#13;
+    "event" : {&#13;
+      "apiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED",&#13;
+      "payload" : {&#13;
+        "type" : "JSON_LITERAL",&#13;
+        "value" : { }&#13;
+      },&#13;
+      "sysId" : "a6267658c74e3010603cb51927c2608a"&#13;
+    },&#13;
+    "operation" : null,&#13;
+    "targetId" : "cksceecffsiiaaaaccyddhiiggpxggvjfffc",&#13;
+    "type" : "EVENT"&#13;
+  } ]&#13;
+} </description>
+        <event_mappings>[ {
+  "eventMappingId" : "cksrddjjqcyaaaabbeddhiiiibvhhpweeicc",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "query" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "query" ]
+            }
+          },
+          "prevQuery" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "prevQuery" ]
+            }
+          },
+          "table" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "table" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8a1e676c53b710108135ddeeff7b1285"
+    },
+    "operation" : null,
+    "targetId" : "cksrddjjqcyaaaabbdddhiiiigiaagjwhz",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cksrddjjffnuaaaabbbddhiiiisnrjfivp",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OVERVIEW_PROGRESS_GRAPH_CLICK",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OVERVIEW_PROGRESS_GRAPH_CLICK",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#LIST_QUERY_UPDATED_RELAY",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "query" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "query" ]
+            }
+          },
+          "prevQuery" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "table" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "table" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8a1e676c53b710108135ddeeff7b1285"
+    },
+    "operation" : null,
+    "targetId" : "cksrddjjffnuaaaabbcddhiiiiegjjwxftaa",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cksgbzbjggaaaaddffddhiihlpggjfhaaw",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.RECORD_PAGE_TABS#LIST_LIMIT_UPDATED_RELAY_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.RECORD_PAGE_TABS#LIST_LIMIT_UPDATED_RELAY_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#LIST_LIMIT_UPDATED_RELAY",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "limit" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "limit" ]
+            }
+          },
+          "prevLimit" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "prevLimit" ]
+            }
+          },
+          "table" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "table" ]
+            }
+          }
+        }
+      },
+      "sysId" : "47ec6f2c53b710108135ddeeff7b1240"
+    },
+    "operation" : null,
+    "targetId" : "cksgbzbjggaaaaddeeddhiihtjjgyffgo",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cksgjjeeqojjaaaaccdddhiihiiidaavnbhh",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OVERVIEW_INCIDENT_IMPACT_CLICK",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OVERVIEW_INCIDENT_IMPACT_CLICK",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#LIST_LIMIT_UPDATED_RELAY",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "limit" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "prevLimit" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "table" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "table" ]
+            }
+          }
+        }
+      },
+      "sysId" : "47ec6f2c53b710108135ddeeff7b1240"
+    },
+    "operation" : null,
+    "targetId" : "cksgjjeeqojjaaaacceddhiihjnaantxmv",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckseiikdmfaaaabbfddhiiggugdduenfy",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "a6267658c74e3010603cb51927c2608a"
+    },
+    "operation" : null,
+    "targetId" : "ckseiikdmfaaaabbeddhiiggddlggqyziij",
+    "type" : "EVENT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cksghhzccleeaaaabbrddhiihtbbbjjjjuiv",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "ckschhkvlbbaaaaffddddhiiggfqcbbhjjgc",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.RECORD_PAGE_TABS#CLEAR_NOTIFICATIONS_RELAY_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.RECORD_PAGE_TABS#CLEAR_NOTIFICATIONS_RELAY_RELAY_1bf8f5dfc7353010603cb51927c2605b",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_now_record_form.RECORD_PAGE_TABS#CLEAR_NOTIFICATIONS_RELAY",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "b15aafa853b710108135ddeeff7b12a1"
+    },
+    "operation" : null,
+    "targetId" : "ckschhkvlbbaaaaffccddhiiggffvbbrkebee",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cksceecffsiiaaaaccxddhiiggmiihhughpn",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_msi.MSIM#OVERVIEW_METRIC_CLICKED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "a6267658c74e3010603cb51927c2608a"
+    },
+    "operation" : null,
+    "targetId" : "cksceecffsiiaaaaccyddhiiggpxggvjfffc",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Overview">1bf8f5dfc7353010603cb51927c2605b</macroponent>
+        <macroponent_config>{
+  "sysId" : "",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : true,
+  "headingOnlyVisibleToScreenReaders" : false
+}</macroponent_config>
+        <name>Overview default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Cloud Workload">64a401878703c11464dc31973cbb3539</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Overview">e2927dd78747c51464dc31973cbb353c</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>sjansse2</sys_created_by>
+        <sys_created_on>2022-04-29 09:32:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>72927dd78747c51464dc31973cbb355c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Overview default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloud Workload Management Tool" source="x_asmln_cloud_wo_1">ac78c0f08783419064dc31973cbb356f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cloud Workload Management Tool">ac78c0f08783419064dc31973cbb356f</sys_scope>
+        <sys_update_name>sys_ux_screen_72927dd78747c51464dc31973cbb355c</sys_update_name>
+        <sys_updated_by>sjansse2</sys_updated_by>
+        <sys_updated_on>2022-04-29 09:32:24</sys_updated_on>
+    </sys_ux_screen>
+</record_update>

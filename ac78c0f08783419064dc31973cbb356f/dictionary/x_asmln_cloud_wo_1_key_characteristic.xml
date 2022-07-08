@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Key Characteristic" max_length="40" name="x_asmln_cloud_wo_1_key_characteristic" type="collection">
+        <element label="Description" max_length="300" name="description" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+    </element>
+</database>
